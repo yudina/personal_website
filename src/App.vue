@@ -1,24 +1,31 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <BemonHeader />
+    <carousel />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import BemonHeader from './components/BemonHeader.vue'
+import carousel from './components/carousel.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    BemonHeader,
+    carousel
   }
 }
 </script>
 
 <style>
+@font-face {
+  font-family: 'Nanum_Pen_Script';
+  src: url('./assets/Nanum_Pen_Script/NanumPenScript-Regular.ttf');
+}
+
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Nanum_Pen_Script', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
