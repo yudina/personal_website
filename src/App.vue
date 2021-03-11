@@ -2,26 +2,26 @@
   <div id="app">
     <BemonHeader />
     <navigation />
-    <carousel />
+    <router-view />
   </div>
 </template>
 
 <script>
 import BemonHeader from './components/BemonHeader.vue'
-import carousel from './components/carousel.vue'
 import navigation from './components/navigation.vue'
 
 export default {
   name: 'App',
   components: {
     BemonHeader,
-    carousel,
     navigation
   }
 }
 </script>
 
 <style>
+
+
 @font-face {
   font-family: 'Nanum_Pen_Script';
   src: url('./assets/Nanum_Pen_Script/NanumPenScript-Regular.ttf');

@@ -32,3 +32,9 @@ vue.use(vueRouter)
         component: commissions,
     }
   ]
+
+  const router = new vueRouter({
+      routes
+  })
+
+  export default router

@@ -1,10 +1,10 @@
 <template>
   <div class="navigation">
     <ul>
-        <li v-for="item in items" :key="item.name">
-          <router-link :to="{ url }" :key="item.name">
-          {{ item.name }}
-          </router-link>
+        <li>
+          <router-link v-for="item in items" :to="item.url" :key="item.name">
+            {{ item.name }}
+            </router-link>  
         </li>
     </ul>
 
@@ -49,8 +49,17 @@ export default {
 
 .navigation ul li {
     display: inline-block;
-    margin: 0 30px;
     font-size: 24px;
+}
+
+.navigation ul li a {
+    color: black;
+    text-decoration: none;
+    margin: 0 30px;
+}
+
+.router-link-exact-active.router-link-active {
+    color: orange;
 }
 
 </style>
