@@ -64,21 +64,29 @@ export default {
 img {
   width: 300px;
 }
+
+h1 { 
+  margin: 0;
+  font-size: 50px;
+  font-weight: normal;
+}
+
 .socials {
-  padding:1em;
+  padding: 0;
   text-align: center;
 }
 .socials ul{
   list-style-type: none;
-  padding:0;
+  padding: 0;
+  margin: 10px;
 }
 .socials ul li{
   display: inline-block;
-  width: 50px;
-  height: 50px;
+  width: 35px;
+  height: 35px;
   border-radius: 60%;
   border: 1px solid black;
-  margin: 0 10px;
+  margin: 0 15px;
   position: relative;
 }
 .socials ul li svg{
