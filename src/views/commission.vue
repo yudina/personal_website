@@ -1,6 +1,7 @@
 <template>
   <div>
-    <h1>Commission</h1>
+    <h1>Commission rules</h1>
+
   </div>
 </template>
 
@@ -11,3 +12,4 @@ export default {
 
 }
 </script>
+
