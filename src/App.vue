@@ -21,7 +21,6 @@ export default {
 
 <style>
 
-
 @font-face {
   font-family: 'Nanum_Pen_Script';
   src: url('./assets/Nanum_Pen_Script/NanumPenScript-Regular.ttf');

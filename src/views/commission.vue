@@ -1,30 +1,45 @@
 <template>
   <div>
-    <h1>Commission rules</h1>
-    <img class="commissions" src="../assets/transparent_lemon.png">
-    <p class="rules">
-    -For personal use only. <br>
-    -Payment through PayPal. <br>
-    -2-3 weeks turnaround time. <br>
-    -25% off extra characters. <br>
+    <h1>Commission fees</h1>
 
-    I will draw: PG 13, couples, animals, fanart, OCs, portraits. <br>
-    I reserve the right to refuse requests!
+    <div class="wrapper">
+      <div class="imgs">
+        <slider />
+      </div>
+      <div class="content">
+        <p class="rules">
+        -For personal use only. <br>
+        -Payment through PayPal. <br>
+        -2-3 weeks turnaround time. <br>
+        -25% off extra characters. <br>
 
-    Reach me on any of the mentionned socials :3</p>
+        I will draw: PG 13, couples, animals, fanart, OCs, portraits. <br>
+        I reserve the right to refuse requests!
+
+        Reach me on any of the mentionned socials :3</p>
+      </div>
+    </div>
+
+
 
   </div>
 </template>
 
 <script>
 
+import slider from '../components/slider'
 export default {
-  name: 'Commission',
-
+  name: 'commission',
+  components:{
+    slider,
+  }
 }
 </script>
 
 <style>
+.imgs{
+  display: flex;
+}
 .commissions{
   width: 200px;
   height: 200px;
@@ -37,6 +52,14 @@ export default {
    width: 300px;
    height: 300px;
    padding: 5px;
+   margin-top: 25px;
+}
+
+.wrapper {
+  margin: 0 auto;
+  display: flex;
+  max-width: 1440px;
+  justify-content: center;
 }
 
 </style>
